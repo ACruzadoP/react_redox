@@ -1,14 +1,13 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-
-import App from './App';
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./App";
 
 //GLOBALIZED STATE
-import {createStore} from 'redux';
+import { createStore } from "redux";
 //REDUCER
-import allReducers from './reducers';
+import allReducers from "./reducers";
 //PROVIDER
-import {Provider} from 'react-redux';
+import { Provider } from "react-redux";
 
 //REDUCER
 const store = createStore(
@@ -20,5 +19,6 @@ const store = createStore(
 ReactDOM.render(
   <Provider store={store}>
     <App />
-  </Provider>
-,document.getElementById('root'));
+  </Provider>,
+  document.getElementById("root")
+);
